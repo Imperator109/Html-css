@@ -1,0 +1,68 @@
+#calyblok{
+	font-size: 24px;
+	
+
+}
+
+#naglowek {
+	height: 10%;
+	width: 100%;
+	min-height: 100px;
+	text-align: center;
+	font-size: 42px;
+	border:3px solid #EEE;
+	background-color:rgba(255,255,255,0.5);
+	background-image: 	url(dwa.png);
+		
+	animation:nagloweksierusza 300s linear infinite alternate;	
+	
+}
+#main {
+	height: 80%;
+	width: 80%;
+	float: right;
+	background-color: white;
+	min-height: 1000px;
+	border-style: solid;
+	padding: 10px;
+}
+
+#spis {
+	background-color:#0099FF ;
+	height: 80%;
+	width: 20%;
+	min-height: 1000px;
+	border-style: solid;
+	text-align: center;
+	padding: 10px;
+}
+
+#stopka {
+	height: 10%;
+	width: 100%;
+	text-align: center;
+	background-color: silver;
+	min-height: 100px;
+	border-style: inset;
+	
+
+}
+#stopka > p {
+margin:0;
+white-space:nowrap;
+animation:przesuwamy 30s linear infinite;
+}
+
+@keyframes przesuwamy
+{
+0% { transform:translateX(0);}
+100% {transform:translateX(-100%);}
+}
+
+
+
+@keyframes nagloweksierusza
+{
+  0% { background-position:0 0, 0 0, 0 0; }
+  100% { background-position:10000px 0, 7500px 0, 5000px 0; }
+}
